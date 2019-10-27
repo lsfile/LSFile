@@ -1,4 +1,3 @@
-RewriteOptions inherit
 RewriteEngine On
 RewriteBase /
 
@@ -14,8 +13,6 @@ RewriteRule ^contact/$ contact.php [L]
 RewriteRule ^latest/$ latest.php [L]
 RewriteRule ^sitemap.xml$ stmp.php [L]
 RewriteRule ^file/d/(.+)$ indexxx.php?t=$1
-        
-Options -Indexes
 
 ErrorDocument 400 /
 ErrorDocument 401 /
