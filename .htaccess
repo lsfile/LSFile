@@ -1,8 +1,6 @@
 RewriteEngine On
-RewriteBase /
-
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
 RewriteRule ^4(.+)$ dnload.php?gd=$1
 RewriteRule ^1(.+)$ dlnews.php?gd=$1
