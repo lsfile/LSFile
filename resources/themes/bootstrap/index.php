@@ -4,7 +4,7 @@
 
     <head>
 
-        <title><?php echo $lister->getListedPath(); ?> – LSFile Project</title>
+        <title><?php echo $lister->getPath(); ?> – LSFile Project</title>
         <link rel="shortcut icon" href="<?php echo THEMEPATH; ?>/img/folder.png">
 
         <!-- STYLES -->
