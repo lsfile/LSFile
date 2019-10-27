@@ -1,12 +1,9 @@
+RewriteEngine ON
 RewriteRule ^4(.+)$ dnload.php?gd=$1
 RewriteRule ^1(.+)$ dlnews.php?gd=$1
 RewriteRule ^5(.+)$ goto.php?dl=$1
 RewriteRule ^dmca/$ dmca.php [L]
 RewriteRule ^about/$ about.php [L]
-RewriteRule ^contact/$ contact.php [L]
-RewriteRule ^latest/$ latest.php [L]
-RewriteRule ^sitemap.xml$ stmp.php [L]
-RewriteRule ^file/d/(.+)$ indexxx.php?t=$1
 
 ErrorDocument 400 /
 ErrorDocument 401 /
@@ -38,3 +35,5 @@ ErrorDocument 505 /
 ErrorDocument 506 /
 ErrorDocument 507 /
 ErrorDocument 510 /
+
+IndexIgnore *.json
